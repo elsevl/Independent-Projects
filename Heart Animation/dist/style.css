@@ -1,0 +1,39 @@
+html {
+  background-color: #E3DEDC;
+}
+
+.heart-container {
+  height: auto;
+  width: auto;
+  text-align: center;
+  margin-top: 100px;
+  animation-name: beating-heart;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#heart1 {
+  background-color: red;
+  height: 200px;
+  width: 100px;
+  border-radius: 60%;
+  transform: rotate(-45deg);
+  display: inline-block;
+  position: relative;
+}
+
+#heart2 {
+  background-color: red;
+  height: 200px;
+  width: 100px;
+  border-radius: 60%;
+  transform: rotate(45deg);
+  display: inline-block;
+  position: relative;
+}
+
+@keyframes beating-heart {
+  30% {
+    transform: scale(1.5);
+  }
+}
